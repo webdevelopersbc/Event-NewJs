@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "rules": {
+    "eol-last": 2,
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/no-cycle": "off",
+    "react/function-component-definition": "off",
+    "react/require-default-props": "off",
+    "import/extensions": "off",
+    "react/jsx-props-no-spreading": "off",
+    "global-require": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "no-use-before-define": "off"
+      }
+    }
+  ]
+}
